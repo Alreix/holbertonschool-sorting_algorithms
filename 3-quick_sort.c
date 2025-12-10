@@ -2,6 +2,7 @@
 
 /**
  * _quick_sort - recursively sorts a partition of an array
+ *               using the Lomuto partition scheme
  *
  * @array: pointer to the array
  * @low: starting index of the partition
@@ -59,6 +60,7 @@ int lomuto_partition(int *array, int low, int high, size_t size)
 		array[high] = temp;
 		print_array(array, size);
 	}
+
 	return (i + 1);
 }
 
